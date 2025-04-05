@@ -1,6 +1,4 @@
-//
-// Created by Pratik Giri on 22-03-2025.
-//
+
 
 #include <iostream>
 using namespace std;
