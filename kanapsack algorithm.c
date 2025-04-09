@@ -1,4 +1,3 @@
-
 # include<stdio.h>
 void knapsack(int n, float weight[], float profit[], float capacity) {
     float x[20], tp = 0;
@@ -23,14 +22,9 @@ void knapsack(int n, float weight[], float profit[], float capacity) {
 
     tp = tp + (x[i] * profit[i]);
 
-    printf("\nThe result vector is:- ");
-    for (i = 0; i < n; i++)
-        printf("%f\t", x[i]);
-
     printf("\nMaximum profit is:- %f", tp);
 
 }
-
 int main() {
     float weight[20], profit[20], capacity;
     int num, i, j;
