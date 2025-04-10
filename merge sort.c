@@ -27,6 +27,8 @@ void merge(int arr[], int start, int mid, int end){
     }
 }
 
+
+
 void mergesort(int arr[], int start, int end){
     if(start < end){
         int mid = (start + end) / 2;
@@ -37,6 +39,8 @@ void mergesort(int arr[], int start, int end){
 }
 
 int main(){
+
+    printf("MERGE SORT--------\n");
     int arr[7] = {1, 5, 8, 9, 4, 0, 3};
     int size = sizeof(arr) / sizeof(arr[0]);
     mergesort(arr, 0, size - 1);
