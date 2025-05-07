@@ -9,7 +9,7 @@ int main() {
 
     printf("Enter the cost adjacency matrix:\n");
     for (i = 1; i <= n; i++) {
-        for (j = 1; j <= n; j++) {
+        for (j = 1; j <n; j++) {
             scanf("%d", &cost[i][j]);
             if (cost[i][j] == 0)
                 cost[i][j] = 999; // 999 represents infinity
@@ -19,7 +19,7 @@ int main() {
     visited[1] = 1;
 
     printf("The edges of the Minimum Spanning Tree are:\n");
-    while (ne < n) {
+    while (ne <n) {
         min = 999;
         for (i = 1; i <= n; i++) {
             if (visited[i]) {
